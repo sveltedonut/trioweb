@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Navbar Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+      
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+      
+    <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron" id="topbox">
+      </div>
+    
+      <div class="page-header">
+        <h1>team leaderboard</h1>
+      </div>
+        
+      <div class="row" id="red">
+          <div class="col-xs-4 col-md-2">
+              <p style="font-size: 18px" id="redNum">red: 0</p>
+          </div>
+          <div class="col-xs-8 col-md-10" id="redBar">
+              <div id="progress-red" class="progress red">
+                <div id="bar-red" class="progress-bar progress-bar-danger" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+              </div>
+          </div>
+      </div>
+        
+      <div class="row" id="green">
+          <div class="col-xs-4 col-md-2">
+              <p style="font-size: 18px" id="greenNum">green: 0</p>
+              
+          </div>
+          <div class="col-xs-8 col-md-10" id="greenBar">
+              <div id="progress-green" class="progress green">
+                <div id="bar-green" class="progress-bar progress-bar-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+              </div>
+          </div>
+      </div>
+        
+      <div class="row" id="blue">
+          <div class="col-xs-4 col-md-2">
+              <p style="font-size: 18px" id="blueNum">blue: 0</p>
+          </div>
+          <div class="col-xs-8 col-md-10" id="blueBar">
+              <div id="progress-blue" class="progress blue">
+                <div id="bar-blue" class="progress-bar progress-bar-info" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
+              </div>
+          </div>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/trio.js"></script>
+  </body>
+</html>
