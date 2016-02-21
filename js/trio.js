@@ -46,7 +46,7 @@ function updateAuth(authData) {
 function idReturn(data){
     var id = data.val();
     if (id === null) {
-        team = Math.floor(Math.random()*2);
+        team = Math.floor(Math.random()*3);
         idRef.child("team").set(team);
     }
     else {
