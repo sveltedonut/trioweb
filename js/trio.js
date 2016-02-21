@@ -115,6 +115,6 @@ function update(data){
         $("#bar-" + colors[i]).attr("aria-valuemin", 0);
         $("#bar-" + colors[i]).attr("aria-valuemax", total);
         
-        $("#" + colors[i] + "Num").text(colors[i] + ": " + scores[i]);
+        $("#" + colors[i] + "Num").text(colors[i] + ": " + scores[i] + "/" + total);
     }
 }
