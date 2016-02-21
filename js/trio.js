@@ -7,6 +7,7 @@ var team = -1;
 var colors = ["red", "green", "blue"];
 var themes = ["danger", "success", "info"];
 var slogans = ["right at 'em, red.", "go get 'er, green.", "blow it outta the water, blue."]
+var time = 0;
 
 //auth callback
 ref.onAuth(updateAuth);
@@ -95,10 +96,12 @@ function logout(){
 
 //clicky call
 function clicky(){
+    if ($('.clicky').is(':hover')) {
     console.log("clicky.");
-    ref.child("scores").child(team).transaction(function (current_value) {
-        return (current_value || 0) + 1;
-    });
+        ref.child("scores").child(team).transaction(function (current_value) {
+            return (current_value || 0) + 1;
+        });
+    }
 }
 
 scoresRef.on("value", update);
